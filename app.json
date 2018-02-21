@@ -1,0 +1,21 @@
+[
+    {
+        "name":"Jovana",
+        "age":"24",
+        "country":"Serbia"
+    },
+
+    [
+        {
+            "name":"Jelena",
+            "age":"24",
+            "country":"Serbia"
+        },
+        {
+            "name":"Marko",
+            "age":"30",
+            "country":"Rumunija"
+        }
+
+    ]
+]
