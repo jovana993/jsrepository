@@ -35,3 +35,20 @@ Person.prototype.staticvar2 = 'Hello again';
 Person.prototype.introduceYourself = function(){
     console.log('My name is '+this.firstname + ' '+ this.lastname);
 }
+
+var js = JSON.stringify(p1);
+
+console.log(js);
+
+console.log(JSON.stringify({ x: [10, undefined, function(){}, Symbol('')] }));
+
+console.log(JSON.stringify(new Date(2006, 0, 2, 15, 4, 5))); 
+
+var str = JSON.parse(js);
+
+console.log(str.firstname);
+
+JSON.parse('{"1": 1, "2": 2, "3": {"4": 4, "5": {"6": 6}}}', (key, value) => {
+    console.log(key); 
+    return value;    
+  });
